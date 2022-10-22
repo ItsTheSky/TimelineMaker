@@ -1,0 +1,27 @@
+{
+    "settings": {
+        "name": "My Timeline",
+        "start": -500,
+        "end": 500,
+        "year_name": "Y",
+        "background": "#FFFFFF",
+        "text": "#000000",
+        "structure": "#353535",
+        "font": "Arial",
+        "rows": 4
+    },
+    "events": [
+        {
+            "name": "Your period",
+            "start": -100,
+            "end": 100,
+            "priority": "HIGH"
+        },
+        {
+            "name": "Your instant event",
+            "start": 200,
+            "end": 200,
+            "priority": "LOWEST"
+        }
+    ]
+}
