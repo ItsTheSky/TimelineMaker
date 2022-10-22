@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id 'com.github.johnrengelman.shadow' version '7.1.2'
 }
 
 group 'info.itsthesky'
@@ -12,5 +13,16 @@ repositories {
 dependencies {
     implementation 'com.formdev:flatlaf:2.6'
     implementation 'org.json:json:20220924'
-    implementation 'org.jetbrains:annotations:20.1.0'
+
+    shadow 'org.jetbrains:annotations:23.0.0'
+}
+
+shadowJar {
+    archiveName = 'TimelineMaker.jar'
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'info.itsthesky.TimelineMaker'
+    }
 }
